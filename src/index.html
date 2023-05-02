@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML com JS</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Controle Financeiro EBAC</h1>
-        <h2>Entrada e saída do mês</h2>
-        <form id="form-financeiro">
-            <input type="number" id="entrada" required placeholder="Entrada" />
-            <p class="failure-message">
-            </p>
-            <input type="number" id="saida" required placeholder="Saída" />
-            <textarea placeholder="Descrição (opcional)"></textarea>
-            <button type="submit">Cadastrar</button>
-        </form>
-        <p class="success-message">
-        </p>
-    </div>
+     <header>
+        <h1>ToDo List</h1>
+     </header>
+     <form>
+        <h2>Insira sua Tarefa</h2>
+        <input type="text"  id="adiciona-tarefa" required placeholder="Nome da tarefa">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+     </form>
+     <h1>Tarefas</h1>
+     <ul>
+     </ul>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
