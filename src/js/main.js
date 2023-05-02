@@ -4,7 +4,9 @@ const saida = document.getElementById('saida');
 const entrada = document.getElementById('entrada');
 
 function validateForm(saida, entrada) {
-    if(saida > entrada){
+    const saidaNum = parseInt(saida);
+    const entradaNum = parseInt(entrada);
+    if(saidaNum > entradaNum){
         return false;
     } else {
         return true;
@@ -32,7 +34,7 @@ form.addEventListener('submit', function(e) {
 })
 
 saida.addEventListener('change', function() {
-    validateChange = validateForm(saida, entrada);
+    validateChange = validateForm(saida.value, entrada.value);
 
     if(validateChange){
         saida.style.border = '';
@@ -43,7 +45,7 @@ saida.addEventListener('change', function() {
 })
 
 entrada.addEventListener('change', function() {
-    validateChange = validateForm(saida, entrada);
+    validateChange = validateForm(saida.value, entrada.value);
 
     if(validateChange){
         saida.style.border = '';
